@@ -1,0 +1,10 @@
+.HorizontalList {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+

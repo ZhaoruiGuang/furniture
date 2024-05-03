@@ -1,0 +1,19 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+.CardTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 24px;
+  .title {
+    border-left: 6px solid #fa8072;
+    padding-left: 6px;
+    .desc {
+      font-size: 20px;
+      color: #9e9e9e;
+    }
+  }
+  .seeMore {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

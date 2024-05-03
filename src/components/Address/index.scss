@@ -1,0 +1,28 @@
+@import "~taro-ui/dist/style/components/list.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+.Address {
+  margin-top: 40px;
+  .map {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .at-list__item {
+    font-size: 24px;
+    padding: 16px;
+  }
+  .at-list__item-container .item-icon {
+    margin-right: 6px;
+  }
+  .infoList {
+    position: relative;
+    .daohang {
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      .icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

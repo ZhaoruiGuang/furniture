@@ -1,0 +1,11 @@
+.Banner {
+  height: 360px;
+  .swiperItem {
+    height: 100%;
+    .swiperItemImg {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
