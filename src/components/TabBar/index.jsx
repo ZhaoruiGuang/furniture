@@ -13,6 +13,15 @@ export default function TabBar() {
       Taro.makePhoneCall({
         phoneNumber: '18201465719' //仅为示例，并非真实的电话号码
       })
+      return
+    }
+    const pages = [
+      '/pages/index/index',
+      '/pages/category/index'
+    ]
+    const path = pages[tab]
+    if (path) {
+      Taro.switchTab({ url: path })
     }
   }
   return (
@@ -23,7 +32,7 @@ export default function TabBar() {
         fontSize={12}
         selectedColor='#fa8072'
         tabList={[
-          { title: '首页', iconType: 'home'},
+          { title: '首页', iconType: 'home' },
           { title: '分类', iconType: 'folder' },
           { title: '致电', iconType: 'phone' }
         ]}

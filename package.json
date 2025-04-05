@@ -36,7 +36,7 @@
   ],
   "author": "zhaoruiguang",
   "dependencies": {
-    "@babel/runtime": "^7.21.5",
+    "@babel/runtime": "3.6.17",
     "@tarojs/components": "3.6.17",
     "@tarojs/helper": "3.6.17",
     "@tarojs/plugin-framework-react": "3.6.17",

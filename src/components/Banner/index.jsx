@@ -1,8 +1,15 @@
 import { View, Swiper, SwiperItem, Image } from '@tarojs/components'
+import { useState } from 'react'
 import './index.scss'
 
 export default function Banner(props) {
   const { data = [], style = {} } = props
+  const [activeIndex, setActiveIndex] = useState(0)
+
+  const handleSwiperChange = (e) => {
+    setActiveIndex(e.detail.current)
+  }
+
   return (
     <>
       {
@@ -13,13 +20,16 @@ export default function Banner(props) {
             indicatorColor='#999'
             indicatorActiveColor='#333'
             circular
-            autoplay
+            autoplay={false}
             style={style}
+            onChange={handleSwiperChange}
           >
             {
               data.map((item, index)=> (
                 <SwiperItem key={index}>
-                  <View className={'swiperItem swiperItem-' + index}>
+                  <View className={`swiperItem ${
+                    activeIndex === index ? 'active' : ''
+                  }`}>
                     <Image className='swiperItemImg' src={item?.img} />
                   </View>
                 </SwiperItem>
