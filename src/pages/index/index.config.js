@@ -1,5 +1,5 @@
 export default definePageConfig({
-  navigationBarTitleText: '首页',
+  navigationBarTitleText: '百宏全屋定制工厂',
   enableShareAppMessage: true,
   enableShareTimeline: true,
 })

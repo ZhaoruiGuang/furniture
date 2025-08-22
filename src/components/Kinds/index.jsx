@@ -1,12 +1,16 @@
 import { View, Image, Text } from '@tarojs/components'
+import Taro from '@tarojs/taro'
 import HorizontalList from '../HorizontalList'
 import './index.scss'
 
 export default function Kinds(props) {
   const { data = [] } = props
 
+  // 点击跳转到分类页对应的 Tab
   const handleClickKind = item => {
-    console.log(item)
+    Taro.navigateTo({
+      url: `/pages/category/index?kind=${item.kind}`
+    });
   }
 
   return (

@@ -2,14 +2,14 @@
   "miniprogramRoot": "./dist",
   "projectname": "furniture",
   "description": "家具展示与介绍",
-  "appid": "wxff8c408372a023e8",
+  "appid": "wx1201db4b69120296",
   "setting": {
     "urlCheck": true,
     "es6": false,
     "enhance": false,
     "compileHotReLoad": false,
     "postcss": false,
-    "minified": false
+    "minified": true
   },
   "compileType": "miniprogram"
 }

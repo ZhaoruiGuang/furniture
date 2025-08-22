@@ -21,7 +21,7 @@ export default function TabBar() {
     ]
     const path = pages[tab]
     if (path) {
-      Taro.switchTab({ url: path })
+      Taro.navigateTo({ url: path })
     }
   }
   return (

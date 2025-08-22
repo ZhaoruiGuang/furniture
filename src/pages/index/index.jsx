@@ -3,7 +3,7 @@ import { useLoad } from '@tarojs/taro'
 import './index.scss'
 import Flavour from '../../components/Flavour'
 import Banner from '../../components/Banner'
-import Card from '../../components/Card'
+// import Card from '../../components/Card'
 import Address from '../../components/Address'
 import TabBar from '../../components/TabBar'
 import ExcellentCases from '../../components/ExcellentCases'
@@ -31,24 +31,39 @@ const bannerData = [
 
 const kindData = [
   {
-    kind: 'yigui',
+    kind: 'wardrobe',
     img: 'https://www.aireadall.com/furniture/kind_yg.png',
     title: '衣柜'
   },
   {
-    kind: 'chugui',
+    kind: 'kitchen',
     img: 'https://www.aireadall.com/furniture/kind_cg.png',
     title: '厨柜'
   },
   {
-    kind: 'zhanshigui',
+    kind: 'cabinet',
     img: 'https://www.aireadall.com/furniture/kind_zsg.png',
     title: '展示柜'
   },
   {
-    kind: 'chuang',
+    kind: 'bed',
     img: 'https://www.aireadall.com/furniture/kind_chuang.png',
     title: '床'
+  },
+  {
+    kind: 'sofa',
+    img: 'https://www.aireadall.com/furniture/kind_shafa.jpeg',
+    title: '沙发'
+  },
+  {
+    kind: 'coffeeTable',
+    img: 'https://www.aireadall.com/furniture/kind_chaji.jpeg',
+    title: '茶几'
+  },
+  {
+    kind: 'table',
+    img: 'https://www.aireadall.com/furniture/kind_zhuoyi.jpeg',
+    title: '桌椅'
   },
 ]
 
@@ -59,9 +74,9 @@ export default function Index() {
   })
 
   // 查看更多产品
-  const handleSeeMoreProduct = () => {
-    console.log('------')
-  }
+  // const handleSeeMoreProduct = () => {
+  //   console.log('------')
+  // }
 
   return (
     <View className='Index'>
@@ -75,7 +90,7 @@ export default function Index() {
       {/* 现代、中式、简约、轻奢、简奢、实木、北欧 */}
       <Kinds data={kindData} />
 
-      <Card title='产品展示' desc='您想要的，这里都有。' isMore onClickMore={handleSeeMoreProduct}> aaa </Card>
+      {/* <Card title='产品展示' desc='您想要的，这里都有。' isMore onClickMore={handleSeeMoreProduct} style={{marginTop: '40px'}}> aaa </Card> */}
       <ExcellentCases />
       <Address />
       <TabBar />
